@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    android:padding="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/orderItemImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/orderItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/orderItemImage"
+            android:layout_marginStart="16dp"
+            android:text="Nama Makanan"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/orderItemPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderItemName"
+            android:layout_toEndOf="@id/orderItemImage"
+            android:layout_marginStart="16dp"
+            android:text="Rp 0"
+            android:textSize="14sp"
+            android:textColor="#FF5722" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="12dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/historyMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Menu"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/historyDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tanggal"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+
+        <TextView
+            android:id="@+id/historyTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp 0"
+            android:textSize="14sp"
+            android:textColor="#FF5722"/>
+
+        <TextView
+            android:id="@+id/masuk_ke_keranjang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="masukkan ke keranjang"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
